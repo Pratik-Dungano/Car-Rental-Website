@@ -1,0 +1,93 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #338;
+    color: #fff;
+    margin: 0px;
+    padding:0px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content:space-between;/* Align items to the start and end of the container */
+    align-items: center; /* Center items vertically */
+    margin: 0px;
+    max-width: 1500px;
+    
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    color:#fff;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-item-1{
+    height: 100%;
+    padding: 0px 30px 0px 30px;
+    text-decoration: none;
+    font-weight:500;
+    font-family: sans-serif; 
+    
+  }
+  .nav-item-1:hover{
+    font-weight:900;
+    padding: 5px 30px 0px 30px;
+    width: fit-content;
+    justify-content: space-between;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #eee; 
+    background-color: rgb(84, 84, 204);
+  }
+  .nav-item-2{
+    height: 100%;
+    color: #fff;
+    padding: 5px 30px 0px 30px;
+    text-decoration: none;
+    font-weight:500;
+    font-family: sans-serif; 
+  }
+  .nav-item-2:hover{
+    font-weight:900;
+    padding: 0px 30px 0px 30px;
+    width: fit-content;
+    justify-content: space-between;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(80, 80, 177);
+    background-color: rgb(84, 84, 204);
+  }
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav-link:hover{
+    color:rgb(41, 41, 109);
+  }
+  
+  .login-btn{
+    font-family: sans-serif; 
+    height: 80%;
+    margin: 6px;
+    padding: 0 30px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
+  .login-btn:hover{
+    background-color:rgb(39, 39, 100);
+    font-weight: 900;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  }
+  .login-link{
+    color:rgb(100, 100, 216);
+    text-decoration: none;
+  }
+  .login-link:hover{
+    color:#fff;
+    width: fit-content;
+  }
