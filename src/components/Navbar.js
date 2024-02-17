@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
 import './Navbar.css'; // Import your CSS file for navbar styling
 import logo from '../images/logo.png';
-import home from './Home';
+
 
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        <Link to="/home" className="navbar-brand">
+        <Link to='/' className="navbar-brand">
           <img className="logo" src={logo} alt="Speedzzz"/>
         </Link>
         <ul className="navbar-nav">
@@ -21,7 +21,7 @@ function Navbar() {
             <Link to="/booking" className="nav-link">Booking</Link>
           </li>
           <li className="nav-item-1">
-            <Link to="/about" className="nav-link">About Us</Link>
+            <Link to="/About_us" className="nav-link">About Us</Link>
           </li>
           <li className="nav-item-2">
             <Link to="/contact" className="nav-link">Contact Us</Link>

@@ -18,8 +18,8 @@ function Footer() {
         </div>
         <div className="footerNav">
           <ul>
-            <li><Link to="/home">Home</Link></li>
-            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/About_us">About Us</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </div>
