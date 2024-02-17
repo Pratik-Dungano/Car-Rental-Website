@@ -4,7 +4,6 @@
     color: #fff;
     margin: 0px;
     padding:0px;
-    padding-bottom: 6px;
   }
   
   .container {
@@ -21,22 +20,12 @@
     align-items: center;
     color:#fff;
   }
-  .mov1{
-    width: 60px;
-    height: 40px;
-    animation: moveImage 9s infinite ease-in-out; /* Animation name, duration, iteration count, direction */
+  .logo{
+    width: 100px;
+    height: 50px;
+    animation: moveImage 1.5s infinite ease alternate; /* Animation name, duration, iteration count, direction */
   }
-  .mov2{
-    padding-top: 10px;
-    width: 60px;
-    height: 40px;
-    animation: moveImage-reverse 8s infinite ease-in-out; /* Animation name, duration, iteration count, direction */
-  }
-  .mov3{
-    width: 60px;
-    height: 40px;
-    animation: moveImage-reverse-2 9s infinite ease-in-out; /* Animation name, duration, iteration count, direction */
-  }
+  
   .navbar-nav {
     display: flex;
     flex-direction: row;
@@ -110,25 +99,10 @@
 
   @keyframes moveImage {
     0% {
-      transform: translate(0%,0%); /* Starting position */
+      transform: translateX(0px); /* Starting position */
     }
     100% {
-      transform: translate(2300%,15%); /* Ending position */
+      transform: translateX(20px); /* Ending position */
     }
   }
-  @keyframes moveImage-reverse {
-    0% {
-        transform:translate(2300%,0%); /* Starting position */
-    }
-    100% {
-        transform: translate(-300%,25%);/* Ending position */
-    }
-  }
-  @keyframes moveImage-reverse-2 {
-    0% {
-        transform: translate(2300%,0%); /* Starting position */
-    }
-    100% {
-        transform: translate(-500%,30%);/* Ending position */
-    }
-  }
+  
