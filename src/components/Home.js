@@ -7,6 +7,7 @@ function Home() {
   return (
     <div className="home">
       <div className="jumbotron">
+        <image src="logo.jpg"></image>
         <h1>Welcome to Car Rental</h1>
         <p>Find the perfect car for your trip!</p>
         <Link to="/cars" className="btn btn-primary">View Cars</Link>
