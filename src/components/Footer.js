@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, BrowserRouter as Router,Route } from 'react-router-dom'; // Import Link from 'react-router-dom' for routing
+import { Link} from 'react-router-dom'; // Import Link from 'react-router-dom' for routing
 import './Footer.css';
 
 
@@ -11,16 +11,17 @@ function Footer() {
     <footer>
       <div className="footerContainer">
         <div className="socialIcons">
-          <Link to="#"><i className="fab fa-instagram"></i></Link>
-          <Link to="#"><i className="fab fa-facebook"></i></Link>
-          <Link to="#"><i className="fab fa-twitter"></i></Link>
-          <Link to="#"><i className="fab fa-youtube"></i></Link>
+          <Link className="icon" to="#"><i className="fab fa-instagram"></i></Link>
+          <Link className="icon" to="#"><i className="fab fa-facebook"></i></Link>
+          <Link className="icon" to="#"><i className="fab fa-twitter"></i></Link>
+          <Link className="icon" to="#"><i className="fab fa-youtube"></i></Link>
         </div>
         <div className="footerNav">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/About_us">About Us</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+            <li></li>
+            <li><Link className="pages" to="/">Home</Link></li>
+            <li><Link className="pages" to="/About_us">About Us</Link></li>
+            <li><Link className="pages" to="/contact">Contact Us</Link></li>
           </ul>
         </div>
       </div>

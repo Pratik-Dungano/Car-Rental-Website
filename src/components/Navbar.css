@@ -1,37 +1,56 @@
 /* Navbar Styles */
 .navbar {
-    background-color: #338;
-    color: #fff;
-    margin: 0px;
-    padding:0px;
-  }
-  
-  .container {
-    display: flex;
-    justify-content:space-between;/* Align items to the start and end of the container */
-    align-items: center; /* Center items vertically */
-    margin: 0px;
-    max-width: 1500px;
-    
-  }
-  
+  background-color: #338;
+  color: #fff;
+  position: static;
+  margin:0px;
+  padding: 0px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height:64px;
+  margin: 0px ;/* Set height to 100% */
+  padding: 0px;/* Adjust padding as needed */
+    /* Set Navbar width to 100% of its container */
+}
   .navbar-brand {
-    display: flex;
-    align-items: center;
     color:#fff;
+    display:flex;
+  }
+  
+  ul{
+    margin-right: 20px;
+  }
+  ul li:first-child{
+    justify-content: start;
+   position: absolute;
+   left:15px;
+   top:2px;
+  }
+  ul li{
+    position:relative;
+    top:2px;
+    justify-content: end;
   }
   .logo{
     width: 100px;
     height: 50px;
+    padding: 0px;
     animation: moveImage 1.5s infinite ease alternate; /* Animation name, duration, iteration count, direction */
   }
-  
+ 
   .navbar-nav {
     display: flex;
     flex-direction: row;
+    margin-left: auto;
+  }
+  .navbar-brand{
+    display: flex;
+    flex-direction:row-reverse ;
+    align-items: center;
   }
   .nav-item-1{
-    height: 100%;
     padding: 0px 30px 0px 30px;
     text-decoration: none;
     font-weight:500;
@@ -47,8 +66,7 @@
     color: #eee; 
     background-color: rgb(84, 84, 204);
   }
-  .nav-item-2{
-    height: 100%;
+  .nav-item-2{  
     color: #fff;
     padding: 5px 30px 0px 30px;
     text-decoration: none;
@@ -74,12 +92,11 @@
   
   .login-btn{
     font-family: sans-serif; 
-    height: 80%;
-    margin: 6px;
+    height: 35px;
+    margin: 0px;
     padding: 0 30px;
     text-decoration: none;
     font-weight: 600;
-    display: flex;
     align-items: center;
     border-radius: 8px;
   }
@@ -96,13 +113,59 @@
     color:#fff;
     width: fit-content;
   }
+  
+  i{
+    color: #f9f001;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 250px;
+    z-index: 999;
+    color: yellow;
+    background-color: #111;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 
+
+
+.menu-button{
+    display: none;
+}
+ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
   @keyframes moveImage {
     0% {
       transform: translateX(0px); /* Starting position */
     }
     100% {
-      transform: translateX(20px); /* Ending position */
+      transform: translateX(30px); /* Ending position */
     }
   }
+  @media(max-width: 950px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .navbar{
+        width:auto;
+        height: 40px;
+    }
+}
   
