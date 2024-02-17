@@ -6,8 +6,6 @@ import './Footer.css';
 
 function Footer() {
   return (
-   
-        
     <footer>
       <div className="footerContainer">
         <div className="socialIcons">

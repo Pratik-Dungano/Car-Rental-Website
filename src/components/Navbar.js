@@ -36,8 +36,8 @@ function Navbar() {
         </li>
       </ul>
       
-      <ul className="logo-image">
-      <li ><Link to='/' className="navbar-brand"><img className="logo" src={logo} alt="Speedzzz"/></Link></li>
+      <ul>
+      <li className="moving-car" ><Link to='/' className="navbar-brand"><img className="logo" src={logo} alt="Speedzzz"/></Link></li>
         <li className="nav-item-1 hideOnMobile">
           <Link to="/car-list" className="nav-link">Cars Available</Link>
         </li>
@@ -53,7 +53,7 @@ function Navbar() {
         <li>
           <button className="login-btn hideOnMobile"><Link to="/login" className="login-link">login/register</Link></button>
         </li>
-          <li class="menu-button " onclick={showSidebar}><Link href="#"><i class="fa-solid fa-bars"></i></Link></li>
+          <li class="menu-button " onclick={showSidebar}><Link ><i class="fa-solid fa-bars"></i></Link></li>
       </ul>
   </nav>
   );
