@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../images/logo.png';
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Navbar() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
+  const { loginWithRedirect } = useAuth0();
+  const { logout } = useAuth0();
+  const {isAuthenticated,user} = useAuth0();
+
 
   const showSidebar = () => {
     setSidebarVisible(true);
@@ -31,9 +36,15 @@ function Navbar() {
         <li className="nav-item-2">
           <Link to="/contact" className="nav-link">Contact Us</Link>
         </li>
-        <li>
-          <button className="login-btn"><Link to="/login" className="login-link">login/register</Link></button>
-        </li>
+        {isAuthenticated ? ( <li>
+                                <button className="login-btn hideOnMobile login-link" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                                   Log Out
+                                </button>
+                              </li>
+                          ):(   <li>
+                                <button className="login-btn hideOnMobile login-link" onClick={() => loginWithRedirect()}>Log In</button>
+                              </li>
+        )}
       </ul>
       
       <ul>
@@ -50,9 +61,16 @@ function Navbar() {
         <li className="nav-item-2 hideOnMobile">
           <Link to="/contact" className="nav-link">Contact Us</Link>
         </li>
-        <li>
-          <button className="login-btn hideOnMobile"><Link to="/login" className="login-link">login/register</Link></button>
-        </li>
+        {isAuthenticated ? ( <li>
+                                <button className="login-btn hideOnMobile login-link" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                                   Log Out
+                                </button>
+                              </li>
+                          ):(   <li>
+                                <button className="login-btn hideOnMobile login-link" onClick={() => loginWithRedirect()}>Log In</button>
+                              </li>
+        )}
+       
           <li class="menu-button " onclick={showSidebar}><Link ><i class="fa-solid fa-bars"></i></Link></li>
       </ul>
   </nav>
