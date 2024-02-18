@@ -1,0 +1,66 @@
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  form input[type='text'],
+  form input[type='email'],
+  form input[type='date'],
+  form select,
+  form input[type='number'],
+  form input[type='submit'] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form select {
+    width: 100%;
+  }
+  
+  form input[type='submit'] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  form input[type='submit']:hover {
+    background-color: #0056b3;
+  }
+  
+  input[type='text'][readonly],
+  input[type='email'][readonly],
+  input[type='date'][readonly],
+  input[type='number'][readonly],
+  input[type='text'][readonly]:focus,
+  input[type='email'][readonly]:focus,
+  input[type='date'][readonly]:focus,
+  input[type='number'][readonly]:focus {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  
+  input[type='text'][readonly],
+  input[type='email'][readonly],
+  input[type='date'][readonly],
+  input[type='number'][readonly] {
+    border: none;
+  }
+  

@@ -1,19 +1,15 @@
-// src/carsData.js
-
-import car1 from '../images/car1.jpeg';
-import car2 from '../images/car2.jpeg';
 
 const customerData = [
-  { id: 1, make: 'Toyota', model: 'Corolla', year: 2022, price: 25000, available: true, photo: car1 },
-  { id: 1, make: 'Toyota', model: 'Corolla', year: 2022, price: 25000, available: true, photo: car1 },
-  { id: 2, make: 'Honda', model: 'Accord', year: 2021, price: 30000, available: false, photo: car2 },
-  { id: 1, make: 'Toyota', model: 'Corolla', year: 2022, price: 25000, available: true, photo: car1 },
-  { id: 2, make: 'Honda', model: 'Accord', year: 2021, price: 30000, available: false, photo: car2 },
-  { id: 2, make: 'Honda', model: 'Accord', year: 2021, price: 30000, available: false, photo: car2 },
-  { id: 1, make: 'Toyota', model: 'Corolla', year: 2022, price: 25000, available: true, photo: car1 },
-  { id: 2, make: 'Honda', model: 'Accord', year: 2021, price: 30000, available: false, photo: car2 },
-  { id: 1, make: 'Toyota', model: 'Corolla', year: 2022, price: 25000, available: true, photo: car1 },
-  { id: 2, make: 'Honda', model: 'Accord', year: 2021, price: 30000, available: false, photo: car2 },
+  { id:1,name:'Raju',email:'raju@gmail.com',bookingDate:'1/2/2024',returnDate:'5/2/2024',carType:'Accord',numDays:5,totalPrice:5000},
+  { id:2,name:'Raju',email:'raju@gmail.com',bookingDate:'1/2/2024',returnDate:'5/2/2024',carType:'Accord',numDays:5,totalPrice:5000},
+  { id:2,name:'Raju',email:'raju@gmail.com',bookingDate:'1/2/2024',returnDate:'5/2/2024',carType:'Accord',numDays:5,totalPrice:5000},
+  { id:1,name:'Raju',email:'raju@gmail.com',bookingDate:'1/2/2024',returnDate:'5/2/2024',carType:'Accord',numDays:5,totalPrice:5000},
+  { id:1,name:'Raju',email:'raju@gmail.com',bookingDate:'1/2/2024',returnDate:'5/2/2024',carType:'Accord',numDays:5,totalPrice:5000},
+  { id:1,name:'Raju',email:'raju@gmail.com',bookingDate:'1/2/2024',returnDate:'5/2/2024',carType:'Accord',numDays:5,totalPrice:5000},
+  { id:2,name:'Raju',email:'raju@gmail.com',bookingDate:'1/2/2024',returnDate:'5/2/2024',carType:'Accord',numDays:5,totalPrice:5000},
+  { id:1,name:'Raju',email:'raju@gmail.com',bookingDate:'1/2/2024',returnDate:'5/2/2024',carType:'Accord',numDays:5,totalPrice:5000},
+  { id:2,name:'Raju',email:'raju@gmail.com',bookingDate:'1/2/2024',returnDate:'5/2/2024',carType:'Accord',numDays:5,totalPrice:5000},
+  { id:2,name:'Raju',email:'raju@gmail.com',bookingDate:'1/2/2024',returnDate:'5/2/2024',carType:'Accord',numDays:5,totalPrice:5000},
   // Add more car objects as needed
 ];
 

@@ -37,7 +37,7 @@ function Navbar() {
           <Link to="/contact" className="nav-link">Contact Us</Link>
         </li>
         <div className="login-info"><li></li>
-        {isAuthenticated && (<li> {user.email}</li>)}
+        {isAuthenticated && (<li className="hideOnMobile"> {user.email}</li>)}
         {isAuthenticated ? ( <li>
                                 <button className="hideOnMobile login-link log-out" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                                    Log Out
@@ -65,7 +65,7 @@ function Navbar() {
           <Link to="/contact" className="nav-link">Contact Us</Link>
         </li>
         <div className="login-info"><li></li>
-        {isAuthenticated && (<li> {user.email}</li>)}
+        {isAuthenticated && (<li className="hideOnMobile"> {user.email}</li>)}
         {isAuthenticated ? ( <li>
                                 <button className="hideOnMobile login-link log-out" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                                    Log Out
