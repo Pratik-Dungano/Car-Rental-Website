@@ -9,7 +9,7 @@ function Home() {
         <div className="header-image"></div>
         <h1 className="header-heading">Welcome to RideSafe Rentals</h1>
         <p className="header-para">Where Safety and Enjoyment Go Hand in Hand</p>
-        <Link to="/car-list" className="btn btn-primary view">View Available Cars</Link>
+        <Link to="/CarList" className="btn btn-primary view">View Available Cars</Link>
       </header>
       <section className="services">
         <h2>Our Services</h2>

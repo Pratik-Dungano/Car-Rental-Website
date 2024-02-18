@@ -25,7 +25,7 @@ function Navbar() {
       <ul className="navbar-nav sidebar">
       <li onclick={hideSidebar}><Link href="#"><i class="fa-solid fa-x"></i></Link></li>
         <li className="nav-item-1">
-          <Link to="/car-list" className="nav-link">Cars Available</Link>
+          <Link to="/CarList" className="nav-link">Cars Available</Link>
         </li>
         <li className="nav-item-2">
           <Link to="/booking" className="nav-link">Booking</Link>
@@ -50,7 +50,7 @@ function Navbar() {
       <ul>
       <li className="moving-car" ><Link to='/' className="navbar-brand"><img className="logo" src={logo} alt="Speedzzz"/></Link></li>
         <li className="nav-item-1 hideOnMobile">
-          <Link to="/car-list" className="nav-link">Cars Available</Link>
+          <Link to="/CarList" className="nav-link">Cars Available</Link>
         </li>
         <li className="nav-item-2 hideOnMobile">
           <Link to="/booking" className="nav-link">Booking</Link>

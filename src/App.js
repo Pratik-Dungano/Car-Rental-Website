@@ -7,7 +7,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import About_us from './components/AboutUs';
 import ContactUs from './components/ContactUs';
-
+import CarsList from './components/CarsList';
+import carsData from './components/CarData';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path='/' element={<><Home/><About_us/></>}/>
         <Route path='contact' element={<><ContactUs/></>}/>
         <Route path='About_us' element={<><About_us/></>}/>
-        
+        <Route path="CarList" element={<><CarsList cars={carsData}/></>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
