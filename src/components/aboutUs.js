@@ -11,7 +11,7 @@ function AboutUs() {
 <>  
 <div className="hero">
 <div className="heading">
-            <h1>-*-*-*-*-*-*-*-About Us-*-*-*-*-*-*-*-</h1>
+            <h1>About Us</h1>
         </div>
         <div className="container">
           <div className="hero-content">

@@ -24,7 +24,7 @@ function Footer() {
         </div>
       </div>
       <div className="footerBottom">
-        <p>Copyright &copy;2024; Designed by <span className="designer">Pratik Dungano</span></p>
+        <p>All rights reserved. &copy; {new Date().getFullYear()} RideSafe Rentals; Designed by <span className="designer">Pratik Dungano</span></p>
       </div>
     </footer>
 
