@@ -28,7 +28,7 @@ function Navbar() {
           <Link to="/CarList" className="nav-link">Cars Available</Link>
         </li>
         <li className="nav-item-2">
-          <Link to="/booking" className="nav-link">Booking</Link>
+          <Link to="/Booking" className="nav-link">Booking</Link>
         </li>
         <li className="nav-item-1">
           <Link to="/About_us" className="nav-link">About Us</Link>
@@ -36,8 +36,10 @@ function Navbar() {
         <li className="nav-item-2">
           <Link to="/contact" className="nav-link">Contact Us</Link>
         </li>
+        <div className="login-info"><li></li>
+        {isAuthenticated && (<li> {user.email}</li>)}
         {isAuthenticated ? ( <li>
-                                <button className="login-btn hideOnMobile login-link" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                                <button className="hideOnMobile login-link log-out" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                                    Log Out
                                 </button>
                               </li>
@@ -45,6 +47,7 @@ function Navbar() {
                                 <button className="login-btn hideOnMobile login-link" onClick={() => loginWithRedirect()}>Log In</button>
                               </li>
         )}
+        </div>
       </ul>
       
       <ul>
@@ -53,7 +56,7 @@ function Navbar() {
           <Link to="/CarList" className="nav-link">Cars Available</Link>
         </li>
         <li className="nav-item-2 hideOnMobile">
-          <Link to="/booking" className="nav-link">Booking</Link>
+          <Link to="/Booking" className="nav-link">Booking</Link>
         </li>
         <li className="nav-item-1 hideOnMobile">
           <Link to="/About_us" className="nav-link">About Us</Link>
@@ -61,8 +64,10 @@ function Navbar() {
         <li className="nav-item-2 hideOnMobile">
           <Link to="/contact" className="nav-link">Contact Us</Link>
         </li>
+        <div className="login-info"><li></li>
+        {isAuthenticated && (<li> {user.email}</li>)}
         {isAuthenticated ? ( <li>
-                                <button className="login-btn hideOnMobile login-link" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                                <button className="hideOnMobile login-link log-out" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                                    Log Out
                                 </button>
                               </li>
@@ -70,7 +75,7 @@ function Navbar() {
                                 <button className="login-btn hideOnMobile login-link" onClick={() => loginWithRedirect()}>Log In</button>
                               </li>
         )}
-       
+        </div>
           <li class="menu-button " onclick={showSidebar}><Link ><i class="fa-solid fa-bars"></i></Link></li>
       </ul>
   </nav>

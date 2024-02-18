@@ -9,6 +9,8 @@ import About_us from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import CarsList from './components/CarsList';
 import carsData from './components/CarData';
+import Booking from './components/BookingInfo';
+import customerData from './components/CustomerData';
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path='contact' element={<><ContactUs/></>}/>
         <Route path='About_us' element={<><About_us/></>}/>
         <Route path="CarList" element={<><CarsList cars={carsData}/></>}/>
+        {/* <Route path="Booking" element={<><Booking cars={customerData}/></>}/> */}
       </Routes>
       <Footer />
     </BrowserRouter>

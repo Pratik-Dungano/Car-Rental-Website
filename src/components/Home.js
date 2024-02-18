@@ -37,7 +37,7 @@ function Home() {
       </section>
       <section className="cta">
         <h2>Ready to Rent a Car?</h2>
-        <Link to="/booking" className="btn btn-secondary book">Book Now</Link>
+        <Link to="/CarList" className="btn btn-secondary book">Book Now</Link>
       </section>
     </div>
   );

@@ -93,6 +93,7 @@
   .login-btn{
     font-family: sans-serif; 
     height: 35px;
+    width: 100%;
     margin: 0px;
     padding: 0 30px;
     text-decoration: none;
@@ -135,8 +136,31 @@
     align-items: flex-start;
     justify-content: flex-start;
 }
+.login-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px; 
+}
 
-
+.login-info li:nth-child(3) button{
+  transform: translateX(20px);
+  width: 80%;
+  font-family: sans-serif; 
+  height: 35px;
+  margin: 0px;
+  padding: 0 30px;
+  text-decoration: none;
+  font-weight: 600;
+  align-items: center;
+  border-radius: 8px;
+}
+.login-info li:nth-child(3) button:hover{
+  width: 80%;
+  background-color:rgb(39, 39, 100);
+  font-weight: 900;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
 
 .menu-button{
     display: none;
