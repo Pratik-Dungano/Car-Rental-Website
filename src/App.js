@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { BrowserRouter, Route , Routes} from 'react-router-dom';
-
+import './App.css';
 
 import Home from './components/Home';
 import Navbar from './components/Navbar';
@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
     <Navbar />
       <Routes>
-        <Route path='/' element={<><Home/><About_us/></>}/>
+        <Route path='/' element={<><Home/></>}/>
         <Route path='contact' element={<><ContactUs/></>}/>
         <Route path='About_us' element={<><About_us/></>}/>
         <Route path="CarList" element={<><CarsList cars={carsData}/></>}/>

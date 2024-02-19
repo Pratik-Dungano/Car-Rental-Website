@@ -5,6 +5,7 @@ import './Home.css'; // Import your CSS file for styling
 function Home() {
   return (
     <div className="home">
+      <div className="content">
       <header>
         <div className="header-image"></div>
         <h1 className="header-heading">Welcome to RideSafe Rentals</h1>
@@ -29,7 +30,7 @@ function Home() {
         </div>
         <div className="service-card">
           <div className="service-icon">
-            <i className="fas fa-dollar-sign"></i>
+            <i className="fas fa-indian-rupee-sign"></i>
           </div>
           <h3>Affordable Prices</h3>
           <p>Enjoy competitive rates and transparent pricing with no hidden fees.</p>
@@ -39,6 +40,7 @@ function Home() {
         <h2>Ready to Rent a Car?</h2>
         <Link to="/CarList" className="btn btn-secondary book">Book Now</Link>
       </section>
+      </div>
     </div>
   );
 }

@@ -16,7 +16,6 @@ function Footer() {
         </div>
         <div className="footerNav">
           <ul>
-            <li></li>
             <li><Link className="pages" to="/">Home</Link></li>
             <li><Link className="pages" to="/About_us">About Us</Link></li>
             <li><Link className="pages" to="/contact">Contact Us</Link></li>

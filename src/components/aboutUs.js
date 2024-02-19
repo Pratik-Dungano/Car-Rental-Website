@@ -10,7 +10,8 @@ function AboutUs() {
   return (
 <>  
 <div className="hero">
-<div className="heading">
+  <div className="content-about">
+  <div className="heading">
             <h1>About Us</h1>
         </div>
         <div className="container">
@@ -48,6 +49,8 @@ function AboutUs() {
                 <img className="about-image" src={about7} alt="our story"/>
             </div>
         </div>
+
+  </div>
 </div>
     
   </> 

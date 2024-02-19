@@ -5,11 +5,15 @@
     font-family: "Arial",sans-serif;
 }
 .hero{
-    background-color:  #69c4e0;
+    background-color:  #ffcc00;
     overflow: hidden;
 }
+.content-about{
+    position: relative;
+    top: 20px;
+}
 .heading h1{
-    color: #2e0a83;
+    color: #660066;
     font-size: 55px;
     text-align: center;
     margin-top: 35px;
@@ -30,13 +34,13 @@
 .hero-content h2{
     font-size: 38px;
     margin-bottom: 20px;
-    color: #2e0a83;
+    color: #660066;
 }
 .hero-content p{
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 40px;
-    color: #3e247c;
+    color: #660066;
 }
 .hero-content p ul{
     display: flex;

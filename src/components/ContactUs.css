@@ -5,9 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%, #03a9f5 30%, #03a9f5 100%);
-}
+
 .contactUs{
     position: relative;
     width: 100%;
@@ -60,6 +58,7 @@ body{
  .formbox{
     position: relative;
     width: 100%;
+    animation: fadeInRight 2s ease;
  }
  .formbox .row50{
     display: flex;
@@ -112,6 +111,7 @@ body{
 
 .info{
     background: #0e3959;
+    animation: fadeInDown 2s ease;
 }
 .info h3{
     color: #fff;
@@ -160,6 +160,7 @@ body{
 .map{
     padding: 0px;
     margin: 0s;
+    animation: fadeInRight 2s ease;
 }
 .map iframe{
     width: 100%;
@@ -169,9 +170,6 @@ body{
 /* Responsive */
 
 @media screen and (max-width: 991px){
-    body{
-        background:#03a9f5;
-    }
     .contactUs{
         padding: 20px;
     }
@@ -203,6 +201,36 @@ body{
     }
 }
 
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 

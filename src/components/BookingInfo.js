@@ -8,7 +8,7 @@ const BookingConfirmation = ({ bookingInfo }) => {
       <div className="confirmation-details">
         <p><strong>Name:</strong> {bookingInfo.name}</p>
         <p><strong>Email:</strong> {bookingInfo.email}</p>
-        <p><strong>Pick-up Date:</strong> {bookingInfo.pickupDate}</p>
+        <p><strong>Booking Date:</strong> {bookingInfo.bookingDate}</p>
         <p><strong>Return Date:</strong> {bookingInfo.returnDate}</p>
         <p><strong>Car Type:</strong> {bookingInfo.carType}</p>
         <p><strong>Number of Days:</strong> {bookingInfo.numDays}</p>
